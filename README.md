@@ -15,9 +15,12 @@ Looking at the summary statistics for both June and December we can see some key
 -- The standard deviation for June was 3.26 while for December it was 3.75. 
 
 June Statistical Summary:
+
 <img src="https://github.com/kimcheese33/surfs_up/blob/main/Images/june_temps.png"/>
 
+
 December Statistical Summary:
+
 <img src="https://github.com/kimcheese33/surfs_up/blob/main/Images/dec_temps.png"/>
 
 ## Summary
