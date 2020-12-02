@@ -22,6 +22,18 @@ Looking at the summary statistics for both June and December we can see some key
 
 ## Summary
 
-By looking at the statistical summaries for June and December we can see that June had higher temperatures, which makes sense as June is a summer month. In addition, we can see that June's data is a little more reliable since the standard deviation is lower. This might be because June also had about 2,000 more data points than December. If we wanted to gather more weather data for June and December we could write and execute the following queries:
+By looking at the statistical summaries for June and December we can see that June had higher temperatures, which makes sense as June is a summer month. In addition, we can see that June's data is a little more reliable since the standard deviation is lower. This might be because June also had about 2,000 more data points than December. If we wanted to gather more weather data for June and December we could write two more queries to get how much it rained in either month.
+
+Getting precipitation for June:
+
+```python
+june_rain = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
+```
+
+Getting precipitation for December:
+
+```python
+dec_rain = session.query(Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+```
 
 
